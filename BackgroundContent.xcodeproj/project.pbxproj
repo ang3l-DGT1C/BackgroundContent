@@ -13,6 +13,10 @@
 		3DA7552A298EAC50009FF888 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA75528298EAC50009FF888 /* Main.storyboard */; };
 		3DA7552C298EAC53009FF888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA7552B298EAC53009FF888 /* Assets.xcassets */; };
 		3DA7552F298EAC53009FF888 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA7552D298EAC53009FF888 /* LaunchScreen.storyboard */; };
+		3DA75537298EACC1009FF888 /* InternetMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA75536298EACC1009FF888 /* InternetMonitor.swift */; };
+		3DA7553A298EAE89009FF888 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA75539298EAE89009FF888 /* Network.framework */; };
+		3DA7553C298EB189009FF888 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA7553B298EB189009FF888 /* WebKit.framework */; };
+		3DA7553E298EBEDE009FF888 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA7553D298EBEDE009FF888 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		3DA7552B298EAC53009FF888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DA7552E298EAC53009FF888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DA75530298EAC53009FF888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DA75536298EACC1009FF888 /* InternetMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMonitor.swift; sourceTree = "<group>"; };
+		3DA75539298EAE89009FF888 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		3DA7553B298EB189009FF888 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		3DA7553D298EBEDE009FF888 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA7553C298EB189009FF888 /* WebKit.framework in Frameworks */,
+				3DA7553A298EAE89009FF888 /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +52,7 @@
 			children = (
 				3DA75521298EAC50009FF888 /* BackgroundContent */,
 				3DA75520298EAC50009FF888 /* Products */,
+				3DA75538298EAE88009FF888 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +74,19 @@
 				3DA7552B298EAC53009FF888 /* Assets.xcassets */,
 				3DA7552D298EAC53009FF888 /* LaunchScreen.storyboard */,
 				3DA75530298EAC53009FF888 /* Info.plist */,
+				3DA75536298EACC1009FF888 /* InternetMonitor.swift */,
+				3DA7553D298EBEDE009FF888 /* ViewController2.swift */,
 			);
 			path = BackgroundContent;
+			sourceTree = "<group>";
+		};
+		3DA75538298EAE88009FF888 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DA7553B298EB189009FF888 /* WebKit.framework */,
+				3DA75539298EAE89009FF888 /* Network.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA7553E298EBEDE009FF888 /* ViewController2.swift in Sources */,
 				3DA75527298EAC50009FF888 /* ViewController.swift in Sources */,
+				3DA75537298EACC1009FF888 /* InternetMonitor.swift in Sources */,
 				3DA75523298EAC50009FF888 /* AppDelegate.swift in Sources */,
 				3DA75525298EAC50009FF888 /* SceneDelegate.swift in Sources */,
 			);
